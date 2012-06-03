@@ -1,0 +1,136 @@
+<html>
+<head>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="inettuts.js.css"/>
+</head>
+
+<body>
+
+<div id ="columns">
+<ul id="column1" class="column">  
+  
+    <li id="1" class="widget color-red">  
+        <div class="widget-head">  
+	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a> 
+	</div>
+	<div class="edit-box">
+	</div> 
+        <div class="widget-content">  
+  
+            <p>The content...</p>  
+        </div>  
+    </li>  
+
+    <li id="2" class="widget color-blue">  
+        <div class="widget-head">  
+  	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a> 
+        </div> 
+	<div class="edit-box">
+	</div>  
+        <div class="widget-content">  
+            <p>The content...</p>  
+  
+        </div>  
+    
+</ul>
+<ul id="column2" class="column">  
+  
+    <li id="3" class="widget color-red">  
+        <div class="widget-head"> 
+	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a>
+        </div> 
+	<div class="edit-box">
+	<ul>
+		<li class="item">
+			<label>Change the title?</label>
+			<input value="Widget title">
+		</li>
+	</ul>
+	<li class="item">
+	<label>Available colors:</label>
+	<ul class="colors">
+		<li class="color-yellow"></li>
+		<li class="color-red"></li>
+		<li class="color-blue"></li>
+		<li class="color-white"></li>
+		<li class="color-orange"></li>
+		<li class="color-green"></li>
+	</ul>
+	</li>
+	</div>  
+        <div class="widget-content">  
+  
+            <p>The content...</p>  
+        </div>  
+    </li>  
+    <li id="4" class="widget color-blue">  
+        <div class="widget-head">  
+	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a>  
+        </div>  
+	<div class="edit-box">
+	</div> 	
+        <div class="widget-content">  
+            <p>The content...</p>  
+  
+        </div>  
+    
+</ul>
+
+<ul id="column3" class="column">  
+  
+    <li id="5" class="widget color-green">  
+        <div class="widget-head">  
+	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a> 
+        </div> 
+	<div class="edit-box">
+	</div>  
+        <div class="widget-content">  
+  
+            <p>The content...</p>  
+        </div>  
+    </li>  
+    <li id="6" class="widget color-blue">  
+        <div class="widget-head">  
+	<a class="collapse"></a>
+            <h3>Widget title</h3>
+	
+	<a class="remove"></a>  
+	<a class="edit"></a>
+        </div>  
+	<div class="edit-box">
+	</div> 
+        <div class="widget-content">  
+            <p>The content...</p>  
+  
+        </div>  
+    
+</ul>
+</div>  
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.js"></script>
+<script>
+$(".edit-box").hide();
+</script>
+<script type="text/javascript" src="sort.js"></script>
+</body>
+</html>
