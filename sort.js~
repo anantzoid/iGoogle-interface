@@ -1,7 +1,8 @@
 $(document).ready(function() {
 	
     
-	
+	var dropped = false;
+    var draggable_sibling;
 	//Sortable is applied on columns, and not on individual items
 	$("#column1, #column2, #column3").sortable({ //defining sortable property
 	handle: ".widget-head",	//to be held for sorting
