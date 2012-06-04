@@ -16,15 +16,9 @@ $(document).ready(function() {
 
 //DEFINING THE EDIT BOX
 	$(".edit-box")  
-				//THE NEW TITLE PROMPT
-                .append('<ul><li class="item"><label>Change the title?</label><input value=""/></li>')  
-                .append(function(){//THE COLORLIST  
-                    var colorList = '<li class="item"><label>Available colors:</label><ul class="colors">';  
-                      
-                    return colorList + '</ul>';  
-                })  
-                .append('</ul>');	 
-				//this edit box is not fully functional and is only as a dummy 
+				//THE NEW TITLE PROMPT ND COLOR LIST
+                .append('<ul><li class="item"><label>Change the title?</label><input value=""/></li><li class="item"><label>Available colors:</label><ul class="colors"> <li class=color-yellow/><li class=color-blue/><li class=color-red/><li class=color-orange/><li class=color-white/><li class=color-green/></ul></li></ul>');  
+              
 				
 
 	var id='';
@@ -78,8 +72,15 @@ $(document).ready(function() {
 		//displays edit box
 		$(this).parents().find(id+" .edit-box").show();
 		$(id+" .edit-box input").change(function(){
-		$(this).parents().find(id+' h3').text($(this).val())
+			$(this).parents().find(id+' h3').text($(this).val())
 		});
+		$(id+" .edit-box ul.colors li").click(function(){
+			col = $(this).attr("class");
+			$(id).removeClass();
+			$(id).addClass("widget "+col);
+			//$(this).parents().find(id+" .widget").removeClass(old).addClass("widget "+col); old = "widget "+col;
+		});	
+	
 			
 	},  function(){
 	//Reverts back the png image

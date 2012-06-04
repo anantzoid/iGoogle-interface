@@ -16,15 +16,16 @@ a {color:white;}
     {color:#000;}  
 .color-red h3,.color-blue h3,.color-orange h3  
     {color:#FFF;}  
+.color-classes{.color-yellow,}
 /* End Colours */  
   
 /* Head section */  
 #head {  
     background:  url(img/wp-cartoon-banner.png) no-repeat center;  
-    height: 100px;  
+    height: 200px;  
 }  
 #head h1 {  
-    line-height: 100px;  
+    line-height: 200px;  
     color: #FFF;  
     text-align: center;  
     background: url(img/wp-cartoon-banner.png) no-repeat center;  
