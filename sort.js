@@ -72,13 +72,12 @@ $(document).ready(function() {
 		//displays edit box
 		$(this).parents().find(id+" .edit-box").show();
 		$(id+" .edit-box input").change(function(){
-			$(this).parents().find(id+' h3').text($(this).val())
+			$(this).parents().find(id+' h3').text($(this).val())//changes the title
 		});
 		$(id+" .edit-box ul.colors li").click(function(){
-			col = $(this).attr("class");
-			$(id).removeClass();
-			$(id).addClass("widget "+col);
-			//$(this).parents().find(id+" .widget").removeClass(old).addClass("widget "+col); old = "widget "+col;
+			col = $(this).attr("class");//retreives the color class
+			$(id).removeClass();//removes the previous class
+			$(id).addClass("widget "+col);//adds the new class
 		});	
 	
 			
