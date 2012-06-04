@@ -10,7 +10,7 @@ $(document).ready(function() {
 	placeholder: "widget-placeholder",//the dotted destination of element
 		//on initiation of sorting
         
-    }).diableSelection();
+    });
 	
 	
 
@@ -77,6 +77,9 @@ $(document).ready(function() {
 		$(this).css({backgroundPosition: '-66px 0', width: '55px'});
 		//displays edit box
 		$(this).parents().find(id+" .edit-box").show();
+		$(id+" .edit-box input").change(function(){
+		$(this).parents().find(id+' h3').text($(this).val())
+		});
 			
 	},  function(){
 	//Reverts back the png image

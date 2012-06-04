@@ -44,7 +44,7 @@
 </ul>
 <ul id="column2" class="column">  
   
-    <li id="3" class="widget color-blue">  
+    <li id="3" class="widget color-red">  
         <div class="widget-head"> 
 	<a class="collapse"></a>
             <h3>Widget title</h3>

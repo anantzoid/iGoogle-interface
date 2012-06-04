@@ -20,7 +20,7 @@ a {color:white;}
   
 /* Head section */  
 #head {  
-    background:  url(img/wp-cartoon-banner.png) no-repeat center;  
+    background:  url(img/wp-cartoon-banner.png) no-repeat;  
     height: 100px;  
 }  
 #head h1 {  
