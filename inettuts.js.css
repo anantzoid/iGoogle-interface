@@ -39,6 +39,7 @@
 #column3 .widget-placeholder { margin: 30px 25px 0 35px; }  
   
 .edit-box {  
+    display: none;
     
     overflow: hidden;
     background: #333 url(img/widget-content-bg.png) repeat-x;  
